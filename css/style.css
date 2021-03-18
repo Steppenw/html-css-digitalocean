@@ -1,0 +1,11 @@
+/*MAIN*/
+/*SECTION-HERO*/
+section.hero {
+  background: url('../img/bg-banner-home.jpg');
+  background-size: cover;
+  padding: 50px 0;
+}
+
+section.hero .row .col-sm-6:first-child {
+  color: white;
+}
