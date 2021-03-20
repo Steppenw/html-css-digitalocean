@@ -7,7 +7,7 @@ main > * {
   padding: 50px 0;
 }
 
-main span:not(#terms, .ice) {/*Al validatore CSS questo non piace; gli inspector di Chrome e Firefox non rilevano alcun problema. Chi ha ragione?*/
+main span:not(#terms, .ice, .custom-glyph, section.regions span) {/*Al validatore CSS 'w3.org' questo non piace; gli inspector di Chrome e Firefox non segnalano alcun problema. Chi ha ragione?*/
   color: #717d97;
 }
 
@@ -41,14 +41,13 @@ section.deployment ul li a {
   display: block;
   color: #717d97;
   padding: 8px 16px;
-  text-align: left;
 }
 
 section.deployment ul li a:hover {
   background-color: #f1f1f1;
 }
 
-section.deployment .content {
+main [class*="col-"] > .content {
   margin: 15px 0;  
 }
 
@@ -59,4 +58,53 @@ section.deployment h4 {
 /*SECTION-DEVELOPMENT*/
 section.development {
   background-color: #f3f5f9;
+}
+
+section.development .center-block {
+  max-width: 50%;
+}
+
+section.development .center-block .arrow {
+  width: 5%;
+  float: left;
+}
+
+section.development .center-block .carousel {
+  width: 90%;
+  float: left;
+}
+
+/*SECTION-FEATURES*/
+
+/*SECTION-REGIONS*/
+section.regions {
+  background-color: #003dbb;
+}
+
+section.regions .col-md-6 > .row {
+  line-height: 40px;
+  margin-left: 0;/*!?!?!?!?!?!?!?*/
+}
+
+section.regions .col-md-6 > .row:first-child {
+  margin-top: 15px;/*!?!?!?!?!?!?!?*/
+}
+
+section.regions .col-md-6 > .row:not(:last-child) {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+
+section.regions .col-md-6 > .row > [class*="col-"]:nth-child(2),
+section.regions .col-md-6 > .row > [class*="col-"]:nth-child(3) a {
+  color: #bbcaf9;
+}
+
+@media screen and (max-width: 500px) {
+
+  section.regions .row .col-md-6 > .row > * {
+    padding: 0;/*!?!?!?!?!?!?!?*/
+  }
+
 }
