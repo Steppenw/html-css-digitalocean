@@ -3,11 +3,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*MAIN*/
-main > * {
+main > *, footer {
   padding: 50px 0;
 }
 
-main span:not(#terms, .ice, .custom-glyph, section.regions span) {/*Al validatore CSS 'w3.org' questo non piace; gli inspector di Chrome e Firefox non segnalano alcun problema. Chi ha ragione?*/
+main span:not(#terms, .ice, .custom-glyph, section.regions span, footer) {/*Al validatore CSS 'w3.org' questo non piace (e forse concettualmente neanche a me); gli inspector di Chrome e Firefox non segnalano alcun problema. Chi ha ragione?*/
   color: #717d97;
 }
 
@@ -77,13 +77,14 @@ section.development .center-block .carousel {
 /*SECTION-FEATURES*/
 
 /*SECTION-REGIONS*/
-section.regions {
+.bg-blue {
   background-color: #003dbb;
 }
-
+/*A seguire, promemoria per un piccolo framework da costruire, alterando alcune caratteristiche salienti di 'Bootstrap'.*/
 section.regions .col-md-6 > .row {
   line-height: 40px;
   margin-left: 0;/*!?!?!?!?!?!?!?*/
+  margin-right: 0;/*!?!?!?!?!?!?!?*/
 }
 
 section.regions .col-md-6 > .row:first-child {
@@ -107,4 +108,29 @@ section.regions .col-md-6 > .row > [class*="col-"]:nth-child(3) a {
     padding: 0;/*!?!?!?!?!?!?!?*/
   }
 
+}
+
+/*SECTION-START_NOW*/
+
+/*FOOTER*/
+footer {
+  background-color: #031c4e;
+}
+
+footer [class*="col-"] ul h4 {
+  color: white;
+}
+
+footer [class*="col-"] ul li:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer [class*="col-"] ul li a {
+  color: #bbcaf9;
+}
+
+footer .social span {
+  display: inline-block;
+  margin-right: 15px;
 }
