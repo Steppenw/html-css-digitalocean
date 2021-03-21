@@ -11,6 +11,10 @@
   display: inline-block;
 }
 
+.blk {
+  display: block;
+}
+
 /*POSITION*/
 .custom-glyph {
   top: 2px;
@@ -20,6 +24,10 @@
 /*FONT*/
 .fsz-15 {
   font-size: 15px;
+}
+
+.fsz-25 {
+  font-size: 25px;
 }
 
 .fsz-45 {
@@ -37,6 +45,10 @@
 
 .mt-15 {
   margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mb-10 {
@@ -64,6 +76,10 @@
   color: #bbcaf9;
 }
 
-.blue {
+.my-grey {
+  color: #717d97;
+}
+
+.my-blue {
   color: #003dbb;
 }
