@@ -2,6 +2,74 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+/*NAV*/
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav div.logo {
+  float: left;
+  margin-top: 18.5px;
+  margin-right: 80px;
+}
+
+div.logo img {
+  width: 200px;
+}
+
+nav .hambg {
+  float: right;
+  color: #337ab7;
+  margin: 25px 0;
+}
+  
+nav ul {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+
+  nav .hambg {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+
+  nav ul.left {
+    float: left;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    color: black;
+    padding: 30px 8px;
+  }
+
+  nav ul li a:hover {
+    background-color: #f1f1f1;
+  }
+
+  nav ul.right {
+    float: right;
+  }
+
+  .btn-sgn {
+    color: #337ab7;
+    border-color: #337ab7;
+  }
+
+}
+
 /*MAIN*/
 main > *, footer {
   padding: 50px 0;
@@ -11,6 +79,17 @@ main > *, footer {
 section.hero {
   background: url('../img/bg-banner-home.jpg');
   background-size: cover;
+}
+
+section.hero a.google {
+  position: relative;
+}
+
+section.hero a.google > img {
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  
 }
 
 /*SECTION-CUSTOMERS*/
@@ -168,4 +247,59 @@ footer [class*="col-"] ul li a {
 footer .social span {
   display: inline-block;
   margin-right: 15px;
+}
+
+/*HELP*/
+.help {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+}
+
+.help div.cloud {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  margin-right: 15px;
+  display: none;
+}
+
+.help div.arrw {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  right: -6px;
+  transform: rotate(45deg);
+  bottom: 12px;
+}
+
+.help div.shark {
+  background-color: #006aff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.help img {
+  width: 60px;
+}
+
+.help span.notice {
+  width: 30px;
+  height: 30px;
+  line-height: 24px;/*?*/
+  background-color: red;
+  border: 3px solid;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+.help:hover div.cloud {
+  display: inline-block;
+  vertical-align: middle;
 }

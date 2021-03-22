@@ -14,7 +14,24 @@
   
   <header>
     <div class="container">
-      <nav class="h-80"></nav>
+      <nav>
+          <div class="logo">
+            <img src="img/logo.png" alt="logo" />
+          </div>
+          <span class="hambg blk glyphicon glyphicon-menu-hamburger fsz-30" aria-hidden="true"></span>
+          <ul class="left">
+            <li><a href="#">Products <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Community <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Support <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+            <li><a href="#">Login</a></li>
+            <li><a class="btn btn-default btn-sgn" href="#" role="button">Sign Up</a></li>
+          </ul>
+      </nav>
     </div>
   </header>
 
@@ -41,7 +58,10 @@
                   </div>
                 </form>
                 <a class="btn btn-primary btn-block" href="#" role="button">Create your account</a>
-                <a class="btn btn-default btn-block" href="#" role="button"><strong>Sign up with google</strong></a>
+                <a class="btn btn-default btn-block google" href="#" role="button">
+                  <img src="img/google-icon.png" alt="google" />
+                  <strong>Sign up with google</strong>
+                </a>
                 <span id="terms" class="inl-blk mt-10">By signing up you agree to the
                   <a href="#"><u>Terms of Service</u></a>
                 </span>
@@ -449,6 +469,17 @@
       </div>
     </div>
   </footer>
+
+  <div class="help">
+    <div class="cloud">
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Earum tenetur ex dolorum?</span>
+      <div class="arrw"></div>
+    </div>
+    <div class="shark inl-blk">
+      <a href="#"><img src="img/shark.png" alt="shark" /></a>
+      <span class="notice fsz-15">2</span>
+    </div>
+  </div>
 
 </body>
 </html>
